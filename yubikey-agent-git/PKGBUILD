@@ -1,0 +1,52 @@
+# Maintainer: Thomas Gerbet <thomas at gerbet dot me>
+
+# yubikey-agent can be started with `systemctl --user start yubikey-agent.service`
+# Enabled with the user session with `systemctl --user enable yubikey-agent.service`
+# The PC/SC Smart Card Daemon must activated: `systemctl enable --now pcscd.socket`
+# Socket path is "${XDG_RUNTIME_DIR}/yubikey-agent/yubikey-agent.sock"
+
+pkgname=yubikey-agent-git
+_pkgname=yubikey-agent
+pkgver=v0.1.3.r12.gee7b4ad
+pkgrel=1
+pkgdesc='A seamless ssh-agent for YubiKeys'
+arch=('x86_64')
+url="https://filippo.io/yubikey-agent"
+license=('BSD')
+depends=('pcsclite' 'pinentry')
+makedepends=('go')
+conflicts=('yubikey-agent')
+provides=('yubikey-agent')
+source=(
+   "git+https://github.com/ava1ar/yubikey-agent.git"
+#  "git+https://github.com/FiloSottile/yubikey-agent.git"
+  'yubikey-agent.service'
+)
+sha256sums=(
+  'SKIP'
+  'f0daac762ed6242814a7857494968d18cd400672333b6ab9aa9c9abf714de7dc'
+)
+
+pkgver() {
+  cd "${_pkgname}"
+  git describe --tags --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+build() {
+  cd ${_pkgname}
+  go build \
+    -trimpath \
+    -buildmode=pie \
+    -mod=readonly \
+    -modcacherw \
+    -ldflags "-extldflags $LDFLAGS" \
+    -o ${_pkgname} .
+}
+
+package() {
+  cd ${_pkgname}
+  install -Dm755 ${_pkgname} "$pkgdir"/usr/bin/${_pkgname}
+  install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+  install -Dm644 "$srcdir"/yubikey-agent.service "$pkgdir"/usr/lib/systemd/user/yubikey-agent.service
+}

@@ -1,0 +1,15 @@
+#!/bin/zsh
+setopt NO_NOMATCH
+
+cd $(dirname $(readlink -f $0))
+
+# downloaded and builed packages
+extensions=('xz' 'tar' 'tar.gz' 'tar.xz' 'zip' 'tgz' 'bz2' 'jar' 'xpi' 'vim' 'rpm' 'deb' 'part' 'plasmoid' 'html' 'htm' 'bak' 'tbz')
+for x in $extensions; do
+  rm -f **/*.${x}
+done
+
+# backups
+rm -f **/*~
+rm -f **/.*~
+

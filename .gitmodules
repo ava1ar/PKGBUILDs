@@ -1,0 +1,90 @@
+[submodule "powerline-fonts-git"]
+	path = powerline-fonts-git
+	url = ssh://aur@aur.archlinux.org/powerline-fonts-git.git
+[submodule "aftershotpro3"]
+	path = aftershotpro3
+	url = ssh://aur@aur.archlinux.org/aftershotpro3.git
+[submodule "brother-mfc-j4620dw"]
+	path = brother-mfc-j4620dw
+	url = ssh://aur@aur.archlinux.org/brother-mfc-j4620dw.git
+[submodule "customizepkg-git"]
+	path = customizepkg-git
+	url = ssh://aur@aur.archlinux.org/customizepkg-git.git
+[submodule "diffmerge"]
+	path = diffmerge
+	url = ssh://aur@aur.archlinux.org/diffmerge.git
+[submodule "fb2toepub"]
+	path = fb2toepub
+	url = ssh://aur@aur.archlinux.org/fb2toepub.git
+[submodule "freelib"]
+	path = freelib
+	url = ssh://aur@aur.archlinux.org/freelib.git
+[submodule "freelib-bin"]
+	path = freelib-bin
+	url = ssh://aur@aur.archlinux.org/freelib-bin.git
+[submodule "gstreamer0.10"]
+	path = gstreamer0.10
+	url = ssh://aur@aur.archlinux.org/gstreamer0.10.git
+[submodule "gstreamer0.10-base"]
+	path = gstreamer0.10-base
+	url = ssh://aur@aur.archlinux.org/gstreamer0.10-base.git
+[submodule "kdeplasma-runners-vbox"]
+	path = kdeplasma-runners-vbox
+	url = ssh://aur@aur.archlinux.org/kdeplasma-runners-vbox.git
+[submodule "log2mail-git"]
+	path = log2mail-git
+	url = ssh://aur@aur.archlinux.org/log2mail-git.git
+[submodule "linux-aarch64-raspberrypi-bin"]
+	path = linux-aarch64-raspberrypi-bin
+	url = ssh://aur@aur.archlinux.org/linux-aarch64-raspberrypi-bin.git
+[submodule "mosh-git"]
+	path = mosh-git
+	url = ssh://aur@aur.archlinux.org/mosh-git.git
+[submodule "myrulib-git"]
+	path = myrulib-git
+	url = ssh://aur@aur.archlinux.org/myrulib-git.git
+[submodule "orbada"]
+	path = orbada
+	url = ssh://aur@aur.archlinux.org/orbada.git
+[submodule "fing"]
+	path = fing
+	url = ssh://aur@aur.archlinux.org/fing.git
+[submodule "python2-rpi.gpio"]
+	path = python2-rpi.gpio
+	url = ssh://aur@aur.archlinux.org/python2-rpi.gpio.git
+[submodule "qmmp-plugin-pack"]
+	path = qmmp-plugin-pack
+	url = ssh://aur@aur.archlinux.org/qmmp-plugin-pack.git
+[submodule "realvnc-vnc-viewer"]
+	path = realvnc-vnc-viewer
+	url = ssh://aur@aur.archlinux.org/realvnc-vnc-viewer.git
+[submodule "realvnc-vnc-server"]
+	path = realvnc-vnc-server
+	url = ssh://aur@aur.archlinux.org/realvnc-vnc-server.git
+[submodule "refind-git"]
+	path = refind-git
+	url = https://aur.archlinux.org/refind-git.git
+[submodule "smartmontools-svn"]
+	path = smartmontools-svn
+	url = ssh://aur@aur.archlinux.org/smartmontools-svn.git
+[submodule "system76-driver"]
+	path = system76-driver
+	url = ssh://aur@aur.archlinux.org/system76-driver.git
+[submodule "transmission-remote-gui"]
+	path = transmission-remote-gui
+	url = ssh://aur@aur.archlinux.org/transmission-remote-gui.git
+[submodule "wcmcommander"]
+	path = wcmcommander
+	url = ssh://aur@aur.archlinux.org/wcmcommander.git
+[submodule "tuxboot"]
+	path = tuxboot
+	url = ssh://aur@aur.archlinux.org/tuxboot.git
+[submodule "tuxboot-git"]
+	path = tuxboot-git
+	url = ssh://aur@aur.archlinux.org/tuxboot-git.git
+[submodule "kbd-ru-keymaps"]
+	path = kbd-ru-keymaps
+	url = ssh://aur@aur.archlinux.org/kbd-ru-keymaps.git
+[submodule "vbox-runner-git"]
+	path = vbox-runner-git
+	url = ssh://aur@aur.archlinux.org/vbox-runner-git.git
