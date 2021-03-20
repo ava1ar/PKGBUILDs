@@ -4,9 +4,6 @@
 [submodule "aftershotpro3"]
 	path = aftershotpro3
 	url = ssh://aur@aur.archlinux.org/aftershotpro3.git
-[submodule "brother-mfc-j4620dw"]
-	path = brother-mfc-j4620dw
-	url = ssh://aur@aur.archlinux.org/brother-mfc-j4620dw.git
 [submodule "customizepkg-git"]
 	path = customizepkg-git
 	url = ssh://aur@aur.archlinux.org/customizepkg-git.git
