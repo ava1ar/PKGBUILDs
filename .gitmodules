@@ -85,3 +85,6 @@
 [submodule "vbox-runner-git"]
 	path = vbox-runner-git
 	url = ssh://aur@aur.archlinux.org/vbox-runner-git.git
+[submodule "brother-mfc-j4620dw"]
+	path = brother-mfc-j4620dw
+	url = ssh://aur@aur.archlinux.org/brother-mfc-j4620dw.git
